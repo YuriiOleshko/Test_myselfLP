@@ -1951,8 +1951,8 @@ template {
   }
 
   .sectionThree__list--item::after {
-    -webkit-transform: translate(650%, 1%);
-    transform: translate(650%, 1%);
+    -webkit-transform: translate(950%, 1%);
+    transform: translate(950%, 1%);
   }
 
   .sectionThree--btn {
