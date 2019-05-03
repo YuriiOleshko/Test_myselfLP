@@ -1,0 +1,210 @@
+.sectionFirst {
+  max-width: 480px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  &--title {
+    width: 100%;
+    text-align: center;
+  }
+
+  &--desc {
+    width: 30%;
+
+    margin-left: auto;
+  }
+
+  &--wrapper {
+    position: relative;
+    width: 62%;
+
+  }
+
+  &--img {
+    width: 100px;
+    min-width: 190px;
+    height: 186px;
+
+    &__fon {
+      position: absolute;
+      -webkit-transform: translate(121%, 60%);
+      transform: translate(22%, 8%);
+      width: 130px;
+      height: 134px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &--btn {
+    margin-left: 33%;
+    background: red;
+    border-radius: 27px;
+    padding: 10px 19px;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, .75);
+    color: white;
+    text-transform: uppercase;
+    border: transparent;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sectionFirst {
+    max-width: 768px;
+    min-width: 481px;
+
+    &--img {
+      width: 290px;
+      min-width: 390px;
+      height: 220px;
+    }
+
+    &--img__fon {
+      transform: translate(27%, 8%);
+      width: 250px;
+      height: 164px;
+    }
+
+    &--desc {
+      width: 35%;
+      font-size: 1.3rem;
+    }
+
+    &--title {
+      margin-left: 10%;
+      text-align: left;
+      position: relative;
+      top: 20px;
+      color: #494949;
+
+    }
+
+    &--btn {
+      margin-left: 14%;
+
+    }
+
+    &--wrapper {
+      top: -20px;
+      width: 55%;
+
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sectionFirst {
+    max-width: 1200px;
+    min-width: 769px;
+    background-image: url(../images/tripple.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-x: 529px;
+    background-position-y: 47px;
+    margin-top: -4%;
+
+    &--img {
+      width: 400px;
+      min-width: 400px;
+      height: 250px;
+
+      &__fon {
+        transform: translate(26%, 10%);
+        width: 262px;
+        height: 182px;
+      }
+    }
+
+    &--wrapper {
+      width: 30%;
+      margin-right: auto;
+      top: -48px;
+
+    }
+
+    &--desc {
+      width: 40%;
+      font-size: 1.3rem;
+      margin-left: auto;
+    }
+
+    &--title {
+      width: 100%;
+      margin-left: 22%;
+      text-align: left;
+      position: relative;
+      font-size: 3rem;
+      top: 33px;
+      color: #494949;
+
+    }
+
+    &--btn {
+
+      margin-top: -4%;
+    }
+
+
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .sectionFirst {
+    max-width: 1440px;
+    min-width: 1201px;
+    background-image: url(../images/tripple.png);
+    background-size: 62%;
+    background-repeat: no-repeat;
+    background-position-x: 631px;
+    background-position-y: 53px;
+    margin-top: -4%;
+    padding-bottom: 3rem;
+
+    &--img {
+      width: 400px;
+      min-width: 400px;
+      height: 250px;
+
+      &__fon {
+        transform: translate(26%, 10%);
+        width: 262px;
+        height: 182px;
+      }
+    }
+
+    &--wrapper {
+      width: 36%;
+      margin: auto;
+      top: -48px;
+
+    }
+
+    &--desc {
+      width: 31%;
+      font-size: 1.3rem;
+      margin-left: 16%;
+
+    }
+
+    &--title {
+      width: 100%;
+      margin-left: 16%;
+      text-align: left;
+      position: relative;
+      font-size: 3rem;
+      top: 33px;
+      color: #494949;
+
+    }
+
+    &--btn {
+      margin-top: -4%;
+      margin-left: 18%;
+    }
+
+
+  }
+}

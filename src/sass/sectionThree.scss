@@ -1,0 +1,287 @@
+.sectionThree {
+  margin-top: 3rem;
+  max-width: 480px;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--title {
+
+    color: rgba(73, 73, 73, 255);
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &--desc {
+    margin-left: 10%;
+    text-align: -webkit-auto;
+  }
+
+  &__wrapper {
+    width: 40%;
+
+  }
+
+
+  &__list {
+    width: 165px;
+    padding-left: 1rem;
+
+    &--titDesc {
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    &--item {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/image1.png);
+      color: #fff;
+      padding: 0.2rem 1rem;
+      transform: skewX(-15deg);
+      position: relative;
+      background-size: cover;
+      margin-bottom: 4%;
+
+      &::after {
+        position: absolute;
+        font-size: 2rem;
+        font-weight: 700;
+        content: '1.';
+        top: 0;
+        left: 0;
+        transform: translate(500%, 1%);
+      }
+
+      &--img2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/image2.png);
+
+        &::after {
+          content: '2.';
+          transform: translate(500%, 1%);
+        }
+      }
+
+      &--img3 {
+        background-image: linear-gradient(rgba(66, 66, 64, 0.2), rgba(66, 66, 64, 0.2)), url(../images/image3.png);
+
+        &::after {
+          content: '3.';
+          transform: translate(500%, 1%);
+        }
+      }
+
+    }
+  }
+
+  &--btn {
+    margin-left: 33%;
+    background: red;
+    border-radius: 27px;
+    padding: 10px 19px;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, .75);
+    color: white;
+    text-transform: uppercase;
+    border: transparent;
+  }
+
+  .rombBigImg {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sectionThree {
+    margin-top: 3rem;
+    max-width: 768px;
+    min-width: 481px;
+
+    &__list {
+      width: 60%;
+      padding-left: 1rem;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      top: -37px;
+
+      &--item {
+        width: 100px;
+
+        &::after {
+          transform: translate(430%, 1%);
+        }
+
+      }
+    }
+
+    &--btn {
+      margin-left: 10%;
+
+    }
+
+    &__wrapper {
+      width: 30%;
+
+    }
+
+    &--title {
+      color: #494949;
+      font-size: 2rem;
+      width: 100%;
+      margin-left: 4%;
+      text-align: left;
+      position: relative;
+      top: 28px;
+    }
+
+  }
+
+  .rombBigImg {
+    display: none;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sectionThree {
+    max-width: 1200px;
+    min-width: 769px;
+    position: relative;
+
+    &__list {
+      width: 56%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      top: -37px;
+
+      &--title {
+        font-size: 1.5rem;
+
+      }
+
+      &--item {
+        width: 150px;
+        z-index: 1;
+
+        &::after {
+          transform: translate(650%, 1%);
+        }
+
+      }
+    }
+
+    &--btn {
+      margin-left: 13%;
+      margin-top: -4%;
+
+    }
+
+    &--desc {
+      margin-left: 28%;
+    }
+
+    &__wrapper {
+      width: 40%;
+
+    }
+
+    &--title {
+      color: #494949;
+      font-size: 2rem;
+      width: 100%;
+      margin-left: 14%;
+      text-align: left;
+      position: relative;
+      top: 28px;
+    }
+
+  }
+
+  .outmar {
+    margin-top: 100px
+  }
+
+  .rombBigImg {
+    top: -150px;
+    position: absolute;
+    width: 650px;
+    right: -439px;
+    z-index: 0;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .sectionThree {
+    max-width: 1440px;
+    min-width: 1201px;
+    position: relative;
+
+    &__list {
+      width: 70%;
+      padding-left: 3rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      top: -37px;
+
+      &--title {
+        font-size: 1.5rem;
+
+      }
+
+      &--item {
+        width: 250px;
+        z-index: 1;
+
+        &::after {
+          transform: translate(650%, 1%);
+        }
+
+      }
+    }
+
+    &--btn {
+      margin: 0;
+      position: absolute;
+      top: 72%;
+      left: 6%;
+    }
+
+
+    &--desc {
+      margin-left: 15%;
+    }
+
+    &__wrapper {
+      width: 25%;
+
+    }
+
+    &--title {
+      color: #494949;
+      font-size: 2rem;
+      width: 100%;
+      margin-left: 4%;
+      text-align: left;
+      position: relative;
+      top: 28px;
+    }
+
+  }
+
+  .outmar {
+    margin-top: 100px
+  }
+
+  .rombBigImg {
+    top: -241px;
+    position: absolute;
+    width: 750px;
+    right: -28%;
+    z-index: 0;
+  }
+
+}

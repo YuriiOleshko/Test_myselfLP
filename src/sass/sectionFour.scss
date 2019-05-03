@@ -1,0 +1,420 @@
+.sectionFour {
+  margin-top: 3rem;
+  max-width: 480px;
+  min-width: 320px;
+
+  &--title {
+    text-align: center;
+    color: #494949;
+  }
+
+  &__gallery {
+    width: 100px;
+    overflow: hidden;
+    margin-left: 20%;
+
+    & ul {
+      height: 130px;
+      width: 3000px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transition: margin-left 250ms;
+    }
+
+    & li {
+      display: inline-block;
+    }
+
+    &--img {
+      width: 100px;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    }
+
+
+  }
+
+  &--subTitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    background: black;
+    margin-left: 6%;
+    padding: 7px 10px 7px 10px;
+    transform: skewX(-15deg);
+    width: 64%;
+    margin-bottom: 0;
+    margin-top: -2%;
+  }
+
+  &--underTitle {
+    padding: 7px;
+    margin: 0;
+    background: #bc2e3a;
+    transform: skewX(15deg);
+    width: 50%;
+    color: white;
+    font-size: 10px;
+    margin-left: 16%;
+    margin-top: -3%;
+  }
+
+  &__carousel {
+    position: relative;
+    width: 200px;
+    margin-left: 25%;
+    ;
+  }
+
+  & div {
+    width: 140px;
+    height: 200px;
+    margin-top: 15%;
+    display: block;
+  }
+
+  &--arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 2rem;
+    line-height: 24px;
+
+    display: block;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: #ccc;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+.prev {
+  left: -25px;
+}
+
+.next {
+  right: -25px;
+}
+
+.rombBlack{
+  display: none;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sectionFour {
+    margin-top: 3rem;
+    max-width: 768px;
+    min-width: 481px;
+
+    & div {
+      width: 350px;
+      height: 250px;
+      margin-top: 0;
+    }
+
+    &__gallery {
+      &--img {
+        width: 200px;
+      }
+    }
+
+    &--subTitle {
+      font-size: 1.3rem;
+      color: #fff;
+
+      margin-left: 2%;
+
+      width: 56%;
+      margin-bottom: 0;
+      margin-top: -2%;
+    }
+
+    &--underTitle {
+      width: 40%;
+      color: #fff;
+      font-size: 12px;
+      margin: -2% 0 0 10%;
+    }
+
+    &--title {
+      color: #494949;
+      font-size: 2rem;
+    }
+
+    &--arrow {
+      font-size: 3rem;
+    }
+  }
+
+  .rombBlack{
+    display: none;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sectionFour {
+    background: #f5f5f5;
+
+    max-width: 1200px;
+    min-width: 769px;
+    padding-bottom: 5rem;
+
+    & ul {
+      height: 130px;
+      width: 900px;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    & div {
+      width: 207px;
+      height: 250px;
+      margin-top: 6%;
+      margin-left: 8%;
+    }
+
+    &__carousel {
+      width: 360px;
+    }
+
+    &__gallery {
+      overflow: inherit;
+
+      &--img {
+        width: 200px;
+        position: relative;
+      }
+    }
+
+    &--subTitle {
+      font-size: 1.3rem;
+      color: #fff;
+
+      margin-left: 15%;
+
+      width: 56%;
+      margin-bottom: 0;
+      margin-top: -2%;
+    }
+
+    &--underTitle {
+      width: 40%;
+      color: #fff;
+      font-size: 12px;
+      margin: -2% 0 0 25%;
+    }
+
+    &--title {
+      color: #494949;
+      font-size: 2rem;
+    }
+
+    &--arrow {
+      font-size: 3rem;
+    }
+  }
+
+  .order {
+    order: 2;
+    z-index: 1;
+
+  }
+
+  .order2 {
+    order: 1;
+    opacity: 0.6;
+    z-index: 0;
+
+  }
+
+  .order3 {
+    order: 3;
+    z-index: 0;
+
+    opacity: 0.6;
+  }
+
+  .next {
+    right: -342%;
+  }
+
+  .prev{
+    left: 100px;
+  }
+  
+  .genImage{
+    width: 250px;
+    margin-top: -14%;
+    margin-left: -12%;
+    background-image: url(../images/rombWhite.png)
+  }
+
+  .noneUnd{
+    display: none
+  }
+  
+  .rombImgWhite1{
+    width: 280px;
+    position: absolute;
+    top: -33px;
+    left: -24px;
+    z-index: -1;
+  }
+
+  .rombImgWhite2{
+    width: 230px;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    z-index: -2;
+  }
+
+  .rombBlack{
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .sectionFour {
+    background: #f5f5f5;
+    max-width: 1440px;
+    min-width: 1201px;
+    padding-bottom: 5rem;
+    position: relative;
+
+    & ul {
+      height: 130px;
+      width: 900px;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    & div {
+      width: 207px;
+      height: 250px;
+      margin-top: 6%;
+      margin-left: 8%;
+    }
+
+    &__carousel {
+      width: 360px;
+    }
+
+    &__gallery {
+      overflow: inherit;
+
+      &--img {
+        width: 200px;
+        position: relative;
+      }
+    }
+
+    &--subTitle {
+      font-size: 1.3rem;
+      color: #fff;
+
+      margin-left: 15%;
+
+      width: 56%;
+      margin-bottom: 0;
+      margin-top: -2%;
+    }
+
+    &--underTitle {
+      width: 40%;
+      color: #fff;
+      font-size: 12px;
+      margin: -2% 0 0 25%;
+    }
+
+    &--title {
+      color: #494949;
+      text-align: left;
+      font-size: 2rem;
+      margin-left: 33%;
+  
+    }
+
+    &--arrow {
+      font-size: 3rem;
+    }
+  }
+
+  .order {
+    order: 2;
+    z-index: 1;
+
+  }
+
+  .order2 {
+    order: 1;
+    opacity: 0.6;
+    z-index: 0;
+
+  }
+
+  .order3 {
+    order: 3;
+    z-index: 0;
+
+    opacity: 0.6;
+  }
+
+  .next {
+    right: -342%;
+  }
+
+  .prev{
+    left: 100px;
+  }
+  
+  .genImage{
+    width: 250px;
+    margin-top: -14%;
+    margin-left: -12%;
+    background-image: url(../images/rombWhite.png)
+  }
+
+  .noneUnd{
+    display: none
+  }
+  
+  .rombImgWhite1{
+    width: 280px;
+    position: absolute;
+    top: -33px;
+    left: -24px;
+    z-index: -1;
+  }
+
+  .rombImgWhite2{
+    width: 230px;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    z-index: -2;
+  }
+
+  .rombBlack{
+    display: block;
+    position: absolute;
+    top: -24%;
+    left: -8%;
+    width: 218px;
+  }
+
+}
+

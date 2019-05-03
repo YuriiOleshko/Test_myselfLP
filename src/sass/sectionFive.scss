@@ -1,0 +1,246 @@
+.sectionFive {
+  padding-top: 3rem;
+  max-width: 480px;
+  min-width: 320px;
+
+  &__preview {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__fullview {
+    text-align: center;
+
+  }
+
+  &--smallImg {
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  &--title {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    margin-left: 6%;
+    padding: 7px 10px;
+    margin-bottom: 0;
+    margin-top: -2%;
+  }
+
+  &--desc {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    padding: 15px;
+    background: gainsboro;
+    border-radius: 28px;
+
+  }
+
+  &--first {
+    font-size: 2rem;
+    color: gray;
+  }
+}
+
+
+.smallImg {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.big {
+  border-style: none;
+  width: 170px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.rombImageWhite{
+  display: none;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sectionFive {
+    padding-top: 3rem;
+    max-width: 768px;
+    min-width: 481px;
+
+    &--title {
+      font-size: 18px;
+    }
+
+    &--desc {
+      width: 70%;
+      padding: 2rem;
+      font-size: 1.3rem;
+    }
+
+    &--first {
+      font-size: 3rem;
+    }
+
+    &--smallImg {
+      width: 70px;
+      height: 70px;
+
+    }
+
+    &__preview {
+      justify-content: space-around;
+      width: 40%;
+      margin: auto;
+    }
+  }
+
+
+  .big {
+    width: 220px
+  }
+
+  .rombImageWhite{
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sectionFive {
+    max-width: 1200px;
+    min-width: 769px;
+    position: relative;
+    background-image: url(../images/rombBigbg.png);
+    background-position-x: -76%;
+    background-position-y: 62%;
+    background-size: 52%;
+    background-repeat: no-repeat;
+
+    &__fullview {
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    &--title {
+      font-size: 18px;
+      width: 83%;
+      order: 3;
+    }
+
+    &--desc {
+      width: 53%;
+      padding: 2rem;
+      font-size: 1.3rem;
+      background: transparent;
+    }
+
+    &--first {
+      font-size: 7rem;
+      position: absolute;
+      margin-left: -5%;
+      margin-top: -5%;
+    }
+
+    &--smallImg {
+      width: 70px;
+      height: 70px;
+
+    }
+
+    &__preview {
+      justify-content: space-around;
+      width: 23%;
+      margin: auto;
+    }
+  }
+
+
+  .big {
+    width: 250px;
+    height: 250px;
+    margin-left: 10%;
+    z-index: 2;
+
+  }
+
+  .rombImageWhite{
+    width: 280px;
+    position: absolute;
+    top: 48px;
+    left: 101px;
+    z-index: 0; 
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .sectionFive {
+    max-width: 1440px;
+    min-width: 1201px;
+    position: relative;
+    background-image: url(../images/rombBigbg.png);
+    background-position-x: -76%;
+    background-position-y: 62%;
+    background-size: 52%;
+    background-repeat: no-repeat;
+
+    &__fullview {
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    &--title {
+      font-size: 18px;
+      width: 68%;
+      order: 3;
+    }
+
+    &--desc {
+      width: 27%;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-left: 5%;
+      background: transparent;
+    }
+
+    &--first {
+      font-size: 7rem;
+      position: absolute;
+      margin-left: -5%;
+      margin-top: -5%;
+    }
+
+    &--smallImg {
+      width: 70px;
+      height: 70px;
+
+    }
+
+    &__preview {
+      justify-content: space-around;
+      width: 23%;
+      margin-left: 25%;
+    }
+  }
+
+
+  .big {
+    width: 250px;
+    height: 250px;
+    margin-left: 10%;
+    z-index: 2;
+
+  }
+
+  .rombImageWhite{
+    width: 280px;
+    position: absolute;
+    top: 121px;
+    left: 122px;
+    z-index: 0; 
+  }
+}
+

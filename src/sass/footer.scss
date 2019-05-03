@@ -1,0 +1,169 @@
+.footer {
+  margin-top: 3rem;
+  max-width: 480px;
+  min-width: 320px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/fonInfoter.png);
+
+  &--title {
+    text-align: center;
+    color: #494949;
+    padding-top: 3rem;
+    color: rgba(159, 159, 159, 255);
+  }
+
+  &__list {
+    display: flex;
+    color: rgba(159, 159, 159, 255);
+    font-size: 12px;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+
+    &--item {
+      margin: auto;
+
+      //   &:before{
+      //     content: "";
+      //     background-image: url(../images/iconMess.png);
+      //     position: absolute;
+      //     width: 35px;
+      //     height: 35px;
+      //     z-index: 1;
+      //     -webkit-transform: translate(-114%,-22%);
+      //     transform: translate(-114%,-22%);
+      //     background-repeat: no-repeat;
+      //   }
+    }
+
+
+  }
+
+  &__bottomList {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    border-bottom: 1px solid white;
+    margin: auto;
+  }
+
+  &--copy {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 1rem;
+
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    margin-top: 3rem;
+    max-width: 768px;
+    min-width: 481px;
+
+
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .footer {
+    max-width: 1200px;
+    min-width: 769px;
+
+    &__list {
+      margin: auto;
+
+      &--item {
+        margin: auto;
+        font-size: 1rem;
+
+        &:before {
+          content: "";
+          background-image: url(../images/iconMess.png);
+          position: absolute;
+          width: 55px;
+          height: 45px;
+          z-index: 1;
+          -webkit-transform: translate(-114%, -22%);
+          transform: translate(-135%, 73%);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &__bottomList {
+      width: 48%;
+
+      margin-top: 1rem;
+    }
+  }
+
+  .TEL::before{
+    background-image: url(../images/iconPhone.png);
+    height: 55px;
+    transform: translate(-135%,47%);
+
+  }
+
+  .GPS::before{
+    background-image: url(../images/iconNav.png);
+    height: 55px;
+    transform: translate(-135%,47%);
+
+
+  }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+    min-width: 1201px;
+
+    &__list {
+      margin: auto;
+
+      &--item {
+        margin: auto;
+        font-size: 1rem;
+
+        &:before {
+          content: "";
+          background-image: url(../images/iconMess.png);
+          position: absolute;
+          width: 55px;
+          height: 45px;
+          z-index: 1;
+          -webkit-transform: translate(-114%, -22%);
+          transform: translate(-135%, 73%);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &__bottomList {
+      width: 48%;
+
+      margin-top: 1rem;
+    }
+  }
+
+  .TEL::before{
+    background-image: url(../images/iconPhone.png);
+    height: 55px;
+    transform: translate(-135%,47%);
+
+  }
+
+  .GPS::before{
+    background-image: url(../images/iconNav.png);
+    height: 55px;
+    transform: translate(-135%,47%);
+
+
+  }
+
+}
+

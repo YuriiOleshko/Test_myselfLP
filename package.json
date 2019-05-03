@@ -1,0 +1,41 @@
+{
+  "name": "gulp-starter-kit",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "gulp build",
+    "sprite": "gulp sprite",
+    "images": "gulp images"
+  },
+  "author": "Yurii",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.5.0",
+    "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2"n
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "homepage": "https://yuriioleshko.github.io/Test_myselfLP"
+}
