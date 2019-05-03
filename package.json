@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "gulp prepare",
     "start": "gulp start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "gulp build",
     "sprite": "gulp sprite",
     "images": "gulp images"
   },
+
   "author": "Yurii",
   "license": "MIT",
+ 
+  "homepage": "https://github.com/axZerk/gulp-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
@@ -32,10 +34,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
-    "gulp-uglify": "^3.0.2"n
-  },
-  "dependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "homepage": "https://yuriioleshko.github.io/Test_myselfLP"
+    "gulp-uglify": "^3.0.2",
+    "stylelint": "^9.10.1"
+  }
 }
