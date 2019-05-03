@@ -1,24 +1,24 @@
 "use strict";
 
 var galleryItems = [{
-  preview: '../images/minf 4.png',
-  fullview: '../images/face 4 (1).png',
+  preview: './images/minf 4.png',
+  fullview: './images/face 4 (1).png',
   alt: "alt text 1",
   width: '120px',
   height: '80px',
   widthf: '640px',
   heightf: '480px'
 }, {
-  preview: '../images/minf 2.png',
-  fullview: '../images/face2.png',
+  preview: './images/minf 2.png',
+  fullview: './images/face2.png',
   alt: "alt text 2",
   width: '120px',
   height: '80px',
   widthf: '640px',
   heightf: '480px'
 }, {
-  preview: '../images/minf 1.png',
-  fullview: '../images/face1 (1).png',
+  preview: './images/minf 1.png',
+  fullview: './images/face1 (1).png',
   alt: "alt text 3",
   width: '120px',
   height: '80px',
